@@ -1,11 +1,11 @@
 message-push:
   git_url: https://github.com/opensourceways/message-push.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ea5489fc52984d36a1b33fc6378ddb85?from=out-project&v=1
-  endpoint_id : a00c8423f08b4f2fb68c72bd739d4f48
-  owener : shishupei
+  endpoint_id: a00c8423f08b4f2fb68c72bd739d4f48
+  owener: shishupei
 
 message-manager:
   git_url:
   pipeline_url:
   endpoint_id:
-  owner :
+  owner:
