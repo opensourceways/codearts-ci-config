@@ -4,6 +4,12 @@ message-push:
   endpoint_id: a00c8423f08b4f2fb68c72bd739d4f48
   owener: shishupei
 
+BigFiles:
+  git_url: https://github.com/opensourceways/BigFiles.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/58d2a62564c14ce1815dcce4d1064020?from=in-project&v=1
+  endpoint_id: 213f55413c51481da30769de540a5577
+  owner: jufangqun,zhouyi
+
 message-manager:
   git_url:
   pipeline_url:
