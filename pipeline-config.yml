@@ -4,6 +4,12 @@ message-push:
   endpoint_id: a00c8423f08b4f2fb68c72bd739d4f48
   owener: shishupei
 
+certification-server:
+  git_url: https://github.com/opensourceways/certification-server.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/128c1a12cee14cd3ae4059676f9c3c61?from=out-project&v=1
+  endpoint_id: 8c4ad6369c294b33865f286154e64605
+  owner: zhaoyan    
+
 message-manager:
   git_url:
   pipeline_url:
