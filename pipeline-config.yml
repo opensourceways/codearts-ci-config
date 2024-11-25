@@ -21,3 +21,23 @@ message-manager:
   pipeline_url:
   endpoint_id:
   owner:
+
+EasySoftwareService:
+  git_url: https://github.com/opensourceways/EasySoftwareService.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/99c7d59e96c74d5c963cbf39a9049518?from=in-project&v=1
+  endpoint_id: 582a9b18ea9e4d8993b4461761d3f1d3
+  owener: xiechengzhi
+
+EasySoftwareInput:
+  git_url: https://github.com/opensourceways/EasySoftwareInput.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/704fc4f23f8a43efaa7a470bbb0b99ec?from=in-project&v=1
+  endpoint_id: ba94ad848e4f4fe399650626298f0f74
+  owener: gouzhonglin
+
+easysoftware-autoupgrade:
+  git_url: https://github.com/opensourceways/easysoftware-autoupgrade.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/dfffe2767c914e96aa7e7ae294ba567c?from=in-project&v=1
+  endpoint_id: 94d7a318bf27475291fde12d4e2fc4e2
+  owener: lifan
+
+
