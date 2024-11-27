@@ -2,42 +2,54 @@ message-push:
   git_url: https://github.com/opensourceways/message-push.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ea5489fc52984d36a1b33fc6378ddb85?from=out-project&v=1
   endpoint_id: a00c8423f08b4f2fb68c72bd739d4f48
-  owener: shishupei
+  owner: shishupei, zhaokunhang
+  mail: shishupei@huawei.com, zhaokunhang@huawei.com
 
 BigFiles:
   git_url: https://github.com/opensourceways/BigFiles.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/58d2a62564c14ce1815dcce4d1064020?from=in-project&v=1
   endpoint_id: 213f55413c51481da30769de540a5577
-  owner: jufangqun,zhouyi
+  owner: jufangqun, zhouyi, zhaokunhang
+  mail: jufangqun@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
 
 certification-server:
   git_url: https://github.com/opensourceways/certification-server.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/128c1a12cee14cd3ae4059676f9c3c61?from=out-project&v=1
   endpoint_id: 8c4ad6369c294b33865f286154e64605
-  owner: zhaoyan    
+  owner: zhaoyan, liyanghang, zhaokunhang
+  mail: zhaoyan150@huawei.com, liyanghang@huawei.com, zhaokunhang@huawei.com
 
 message-manager:
   git_url: https://github.com/opensourceways/message-manager.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/e5989fec9a70450e986fdce82f0e09dc?from=out-project&v=1
   endpoint_id: 34a107fde9ee4c828f70cd8f23e4e115
-  owner: hourunze
+  owner: hourunze, shishupei, zhaokunhang
+  mail: hourunze@h-partners.com, shishupei@huawei.com, zhaokunhang@huawei.com
 
 EasySoftwareService:
   git_url: https://github.com/opensourceways/EasySoftwareService.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/99c7d59e96c74d5c963cbf39a9049518?from=in-project&v=1
   endpoint_id: 582a9b18ea9e4d8993b4461761d3f1d3
-  owener: xiechengzhi
+  owner: xiechengzhi, zhaiwenjie, zhaokunhang
+  mail: xiechengzhi3@h-partners.com, zhaiwenjie1@huawei.com, zhaokunhang@huawei.com
 
 EasySoftwareInput:
   git_url: https://github.com/opensourceways/EasySoftwareInput.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/704fc4f23f8a43efaa7a470bbb0b99ec?from=in-project&v=1
   endpoint_id: ba94ad848e4f4fe399650626298f0f74
-  owener: gouzhonglin
+  owner: gouzhonglin, zhaiwenjie, zhaokunhang
+  mail: gouzhonglin@huawei.com, zhaiwenjie1@huawei.com, zhaokunhang@huawei.com
 
 easysoftware-autoupgrade:
   git_url: https://github.com/opensourceways/easysoftware-autoupgrade.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/dfffe2767c914e96aa7e7ae294ba567c?from=in-project&v=1
   endpoint_id: 94d7a318bf27475291fde12d4e2fc4e2
-  owener: lifan
+  owner: lifan, zhaiwenjie, zhaokunhang
+  mail: lifan140@h-partners.com, zhaiwenjie1@huawei.com, zhaokunhang@huawei.com
 
-
+go-gitcode:
+  git_url: https://github.com/opensourceways/go-gitcode.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/4d0001dbe76242f99bd0cf1e9a61917b?from=in-project&v=1
+  endpoint_id: 03237f39828f4e79a0d03e0f22dd9d4c
+  owner: fengchao, zhaokunhang
+  mail: fengchao73@h-partners.com, zhaokunhang@huawei.com
