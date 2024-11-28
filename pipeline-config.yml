@@ -53,3 +53,15 @@ go-gitcode:
   endpoint_id: 03237f39828f4e79a0d03e0f22dd9d4c
   owner: fengchao, zhaokunhang
   mail: fengchao73@h-partners.com, zhaokunhang@huawei.com
+
+om-webserver:
+  git_url: https://github.com/opensourceways/om-webserver.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/096058e3d0e941ec8eba54e20a928f3f?from=in-project&v=1
+  endpoint_id: 52be143a360543c6919f5eff2d89ba1e
+  owener: taofeihu
+
+oneid-server:
+  git_url: https://github.com/opensourceways/oneid-server.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ad194e75781f4cde9fe483e15e4d8c69?from=in-project&v=1
+  endpoint_id: 70c928f5254f42f5af7980c4dd274036
+  owener: taofeihu
