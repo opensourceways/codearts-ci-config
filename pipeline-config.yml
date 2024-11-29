@@ -60,6 +60,7 @@ om-webserver:
   endpoint_id: 52be143a360543c6919f5eff2d89ba1e
   owener: taofeihu
   mail: taofeihu1@huawei.com, zhaokunhang@huawei.com
+  branch: stable
   
 oneid-server:
   git_url: https://github.com/opensourceways/oneid-server.git
