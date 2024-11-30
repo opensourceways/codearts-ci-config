@@ -74,3 +74,4 @@ datastat-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/66fb93d75f8d41f0a1082bbf4770f5a9?from=in-project&v=1
   endpoint_id: 383974d1f5764ae98ddc46fc3245265e
   owener: wucaiping
+  mail: wucaiping1@huawei.com, zhaokunhang@huawei.com
