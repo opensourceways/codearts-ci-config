@@ -82,6 +82,7 @@ EasySearch:
   endpoint_id: 7e0dd4f853a44979a8d51ea779b1a1ac
   owener: lifan
   mail: lifan140@h-partners.com, zhaokunhang@huawei.com,jun.zhongjun@huawei.com
+  branch: refactor
 
 EasySearch-Import:
   git_url: https://github.com/opensourceways/EasySearch-Import.git
