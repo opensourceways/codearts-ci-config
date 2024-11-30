@@ -31,7 +31,7 @@ EasySoftwareService:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/99c7d59e96c74d5c963cbf39a9049518?from=in-project&v=1
   endpoint_id: 582a9b18ea9e4d8993b4461761d3f1d3
   owner: xiechengzhi, zhaiwenjie, zhaokunhang
-  mail: xiechengzhi3@h-partners.com, zhaiwenjie1@huawei.com, zhaokunhang@huawei.com
+  mail: xiechengzhi3@h-partners.com, zhaiwenjie1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
 
 EasySoftwareInput:
   git_url: https://github.com/opensourceways/EasySoftwareInput.git
@@ -67,23 +67,25 @@ oneid-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ad194e75781f4cde9fe483e15e4d8c69?from=in-project&v=1
   endpoint_id: 70c928f5254f42f5af7980c4dd274036
   owener: taofeihu
-  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com
+  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
 
 datastat-server:
   git_url: https://github.com/opensourceways/datastat-server.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/66fb93d75f8d41f0a1082bbf4770f5a9?from=in-project&v=1
   endpoint_id: 383974d1f5764ae98ddc46fc3245265e
   owener: wucaiping
-  mail: wucaiping1@huawei.com, zhaokunhang@huawei.com
+  mail: wucaiping1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
 
 EasySearch:
   git_url: https://github.com/opensourceways/EasySearch.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5288ca277b674b3393450c0bd0f0d6d5?from=in-project&v=1
   endpoint_id: 7e0dd4f853a44979a8d51ea779b1a1ac
   owener: lifan
+  mail: lifan140@h-partners.com, zhaokunhang@huawei.com,jun.zhongjun@huawei.com
 
 EasySearch-Import:
   git_url: https://github.com/opensourceways/EasySearch-Import.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/0dfc2b00b34c48868ac855f62a1586aa?from=in-project&v=1
   endpoint_id: 7fbfbfdb3ef44a82b1a4dcdfcd5a2506
   owener: lifan
+  mail: lifan140@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
