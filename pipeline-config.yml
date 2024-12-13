@@ -2,8 +2,22 @@ message-push:
   git_url: https://github.com/opensourceways/message-push.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ea5489fc52984d36a1b33fc6378ddb85?from=out-project&v=1
   endpoint_id: a00c8423f08b4f2fb68c72bd739d4f48
-  owner: shishupei, zhaokunhang
-  mail: shishupei@huawei.com, zhaokunhang@huawei.com
+  owner: shishupei, zhaokunhang,hourunze
+  mail: shishupei@huawei.com, zhaokunhang@huawei.com,hourunze@h-partners.com
+
+message-transfer:
+  git_url: https://github.com/opensourceways/message-transfer.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/9aa09cdf0a864a9f8cb01f2254bbde17?from=in-project&v=1
+  endpoint_id: 3d8e02477789490fb10b885e927c027d
+  owner: shishupei, zhaokunhang,hourunze
+  mail: shishupei@huawei.com, zhaokunhang@huawei.com,hourunze@h-partners.com
+
+message-collect:
+  git_url: https://github.com/opensourceways/message-collect.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5719a88575cf416dbf5fb8186a4997ce?from=in-project&v=1
+  endpoint_id: 0ac98ded10804596b13d2341ede6e5b6
+  owner: shishupei, zhaokunhang,hourunze
+  mail: shishupei@huawei.com, zhaokunhang@huawei.com,hourunze@h-partners.com
 
 BigFiles:
   git_url: https://github.com/opensourceways/BigFiles.git
