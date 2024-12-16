@@ -92,7 +92,7 @@ datastat-server:
 
 EasySearch:
   git_url: https://github.com/opensourceways/EasySearch.git
-  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5288ca277b674b3393450c0bd0f0d6d5?from=in-project&v=1
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5288ca277b674b3393450c0bd0f0d6d5?from=out-project&v=1
   endpoint_id: 7e0dd4f853a44979a8d51ea779b1a1ac
   owener: lifan
   mail: lifan140@h-partners.com, zhaokunhang@huawei.com,jun.zhongjun@huawei.com
@@ -111,3 +111,10 @@ om-kafka:
   endpoint_id: 833845f535f344a381b9466c16ee3840
   owener: taofeihu
   mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+oneid-website:
+  git_url: https://github.com/opensourceways/oneid-website.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/434e2323aa3e44449b7fe5cc2a24c2b6?from=out-project&v=1
+  endpoint_id: efe813053ad94d8fb7803d8f0d08e52d
+  owener: gongzhuangbang
+  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com,gongzhuangbang1@huawei.com
