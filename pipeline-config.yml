@@ -104,3 +104,10 @@ EasySearch-Import:
   endpoint_id: 7fbfbfdb3ef44a82b1a4dcdfcd5a2506
   owener: lifan
   mail: lifan140@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  
+om-kafka:
+  git_url: https://github.com/opensourceways/om-kafka.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/434e2323aa3e44449b7fe5cc2a24c2b6?from=out-project&v=1
+  endpoint_id: 833845f535f344a381b9466c16ee3840
+  owener: taofeihu
+  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
