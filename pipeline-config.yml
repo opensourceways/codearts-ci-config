@@ -118,3 +118,10 @@ oneid-website:
   endpoint_id: efe813053ad94d8fb7803d8f0d08e52d
   owener: gongzhuangbang
   mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com,gongzhuangbang1@huawei.com
+
+xihe-server:
+  git_url: https://github.com/opensourceways/xihe-server
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5c049736c2cd46ba9a4c8bbcbc5e0fca?from=in-project&v=1
+  endpoint_id: 70d9403856274939a703351894b1f1d3
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
