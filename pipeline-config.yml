@@ -114,7 +114,7 @@ om-kafka:
 
 oneid-website:
   git_url: https://github.com/opensourceways/oneid-website.git
-  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/434e2323aa3e44449b7fe5cc2a24c2b6?from=out-project&v=1
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/be610f083fa94d4e9700d381e6710942?from=out-project&v=1
   endpoint_id: efe813053ad94d8fb7803d8f0d08e52d
   owener: gongzhuangbang
   mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com,gongzhuangbang1@huawei.com
