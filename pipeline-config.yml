@@ -126,3 +126,38 @@ om-collections:
   owener: wucaiping
   mail: wucaiping1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
 
+certification-website:
+  git_url: https://github.com/opensourceways/certification-website.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/c638474cbe1f41bb8639b2155580cd8f?from=out-project&v=1
+  endpoint_id: 12ebd5f9f3be404fa83c1c641686a01b
+  owener: gongzhuangbang
+  mail: gongzhuangbang1@huawei.com, liuyong269@h-partners.com
+
+app-cla-webui:
+  git_url: https://github.com/opensourceways/app-cla-webui.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2454d1287c6944b9a5edb1ac59197179?from=out-project&v=1
+  endpoint_id: dbafda3f1b284771b32179d344cb85ce
+  owener: gongzhuangbang
+  mail: gongzhuangbang1@huawei.com, liuyong269@h-partners.com
+
+easy-editor-website:
+  git_url: https://github.com/opensourceways/easy-editor-website.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/564305ae6032404dbb27ecabd66b2ad3?from=out-project&v=1
+  endpoint_id: 1638df6e363b4a058b0bd16289aa2232
+  owener: gongzhuangbang
+  mail: gongzhuangbang1@huawei.com, guozhen35@h-partners.com
+
+
+message-manager-website:
+  git_url: https://github.com/opensourceways/message-manager-website.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/f431a8cbaf954d6484468bfaa193c2d6?from=out-project&v=1
+  endpoint_id: 105965e059bd4cca861a73584feac5fb
+  owener: gongzhuangbang
+  mail: gongzhuangbang1@huawei.com, zhangjunwei38@h-partners.com
+
+oneid-website:
+  git_url: https://github.com/opensourceways/oneid-website.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/be610f083fa94d4e9700d381e6710942?from=out-project&v=1
+  endpoint_id: efe813053ad94d8fb7803d8f0d08e52d
+  owener: gongzhuangbang
+  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, gongzhuangbang1@huawei.com, guozhen35@h-partners.com
