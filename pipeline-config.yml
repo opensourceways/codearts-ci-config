@@ -4,6 +4,7 @@ message-push:
   endpoint_id: a00c8423f08b4f2fb68c72bd739d4f48
   owner: shishupei, zhaokunhang,hourunze
   mail: shishupei@huawei.com, zhaokunhang@huawei.com,hourunze@h-partners.com
+  branch: release/openeuler
 
 message-transfer:
   git_url: https://github.com/opensourceways/message-transfer.git
