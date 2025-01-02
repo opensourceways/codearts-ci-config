@@ -127,9 +127,9 @@ xihe-server:
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
 
-om-collections:
-  git_url: https://github.com/opensourceways/om-collections.git
-  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/a3b7a0a70d67475ab4cffdd760d24e05?from=in-project&v=1
-  endpoint_id: c5c466e5104f45c4930ba258ba8e4c18
+om-collection:
+  git_url: https://github.com/opensourceways/om-collection.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/a99ecfa0daf341cf893388825e3d596a?from=in-project&v=1
+  endpoint_id: b9564ae4f53c456b98143869f2e1501b
   owener: wucaiping
   mail: wucaiping1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
