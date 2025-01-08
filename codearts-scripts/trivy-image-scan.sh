@@ -15,7 +15,7 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
   echo "Starting Trivy scan, attempt #$((RETRY_COUNT + 1))..."
 
   # 执行 Trivy 并捕获退出状态码
-  /opt/cached_resources/trivy_db/bin/trivy image --severity HIGH,CRITICAL --cache-dir /opt/cached_resources/trivy_db --format json --output result.json --input $SCAN_TARGET
+  /opt/cached_resources/trivy_db/bin/trivy image --severity HIGH,CRITICAL,MEDIUM,LOW,UNKNOWN --cache-dir /opt/cached_resources/trivy_db --format json --output result.json --input $SCAN_TARGET
 
   # 判断 trivy 执行是否成功
   if [ $? -eq 0 ]; then

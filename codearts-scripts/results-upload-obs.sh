@@ -11,4 +11,8 @@ echo 'hello'
 
 /opt/cached_resources/obsutil/obsutil sync /opt/cached_resources/trivy_db/results obs://infra-codearts-scan/trivy-report
 
-/opt/cached_resources/obsutil/obsutil sync /opt/cached_resources/gitleaks obs://infra-codearts-scan/gitleaks-report
+/opt/cached_resources/obsutil/obsutil sync /opt/cached_resources/sast/nodejs-report obs://infra-codearts-scan/nodejs-report
+
+/opt/cached_resources/obsutil/obsutil sync /opt/cached_resources/gitleaks obs://infra-codearts-scan/gitleaks-report -exclude=/opt/cached_resources/gitleaks/repos/*
+
+/opt/cached_resources/obsutil/obsutil sync obs://infra-codearts-scan/confirmed /opt/cached_resources/confirmed

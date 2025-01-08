@@ -50,3 +50,5 @@ for repo_url in "${repos[@]}"; do
   /opt/cached_resources/gitleaks_8.21.2/gitleaks detect --source="$repo_path" --report-path="$GITLEAKS_REPORT_DIR/$repo_name-gitleaks-report.json" --no-banner
 done
 
+exit 0
+
