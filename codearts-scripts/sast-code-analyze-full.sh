@@ -3,6 +3,7 @@ set +e
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
 export GCM_CREDENTIAL_STORE=cache
 WORKDIR=/opt/cached_resources/sast
+CACHE_DIR=/opt/cached_resources
 SPOTBUGS_HOME=/opt/cached_resources/sast/spotbugs-4.7.3
 export GOROOT=${WORKDIR}/go
 export GOPATH=${WORKDIR}/gopath
@@ -75,7 +76,7 @@ repos=()
 
 while :; do
   response=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "$BASE_URL?per_page=$PER_PAGE&page=$PAGE")
-  current_repos=$(echo "$response" | grep '"clone_url"' | cut -d'"' -f4)
+  current_repos=$(echo "$response" | /opt/cached_resources/jq-linux-amd64 -r '.[] | select(.fork == false) | .clone_url')
 
   if [[ -z "$current_repos" ]]; then
     break
@@ -94,31 +95,44 @@ for repo_url in "${repos[@]}"; do
 
   repo_path="$CLONE_DIR/$repo_name"
   if [[ -d "$repo_path" ]]; then
+    git remote prune origin
     git -C "$repo_path" pull
   else
     git clone "https://github.com/${ORG_NAME}/${repo_name}.git"  "$repo_path"
   fi
 
   current_branch=$(git -C "$repo_path" rev-parse --abbrev-ref HEAD)
-  sanitizedBranch=$(echo "$current_branch" | tr '/' '@')
 
-  remote_url=$(git -C "$repo_path" remote -v | grep '(fetch)' | awk '{print $2}')
-
-  cleaned_repo_url=$(echo "$remote_url" | sed -E 's#https?://##' | tr '/' '@')
-
+  json_file="${CACHE_DIR}/confirmed/repo_analyze_branches.json"
+  branches=$(${CACHE_DIR}/jq-linux-amd64 -r --arg repo "$repoGitPath" '.[] | select(.full_name == $repo) | .merged_refs' "$json_file")
+  branches_array=$(echo "$branches" | ${CACHE_DIR}/jq-linux-amd64 -r '.[]')
+  if [ -z "$branches_array" ]; then
+    branches_array=$current_branch
+  fi
   cd $repo_path
+  git fetch --all
+  git branch -r
+  for branch in $branches_array; do
+    echo "Checking out: $branch"
+    git reset --hard
+    git checkout "$branch"
+    git -C "$repo_path" pull
+    current_branch=$(git -C "$repo_path" rev-parse --abbrev-ref HEAD)
+    sanitizedBranch=$(echo "$current_branch" | tr '/' '@')
+    remote_url=$(git -C "$repo_path" remote -v | grep '(fetch)' | awk '{print $2}')
+    cleaned_repo_url=$(echo "$remote_url" | sed -E 's#https?://##' | tr '/' '@')
+    if [ -f "./pom.xml" ]; then
+        check_java
+        run_analysis_Java $cleaned_repo_url $sanitizedBranch
+    fi
 
-  if [ -f "./pom.xml" ]; then
-      check_java
-      run_analysis_Java $cleaned_repo_url $sanitizedBranch
-  fi
+    if [ -f "./go.mod" ]; then
+        run_analysis_Go $cleaned_repo_url $sanitizedBranch
+    fi
 
-  if [ -f "./go.mod" ]; then
-      run_analysis_Go $cleaned_repo_url $sanitizedBranch
-  fi
-
-  if has_python_files "./"; then
-      run_analysis_Python $cleaned_repo_url $sanitizedBranch
-  fi
+    if has_python_files "./"; then
+        run_analysis_Python $cleaned_repo_url $sanitizedBranch
+    fi
+  done
 done
 

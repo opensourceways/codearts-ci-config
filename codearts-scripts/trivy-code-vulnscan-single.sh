@@ -13,6 +13,7 @@ sanitizedBranch=$(echo "$codeBranch" | tr '/' '@')
 remote_url=$(git remote -v | grep '(fetch)' | awk '{print $2}')
 
 # 去除 .git、ssh@、https://、http://
+repoName=$(echo "$remote_url" | sed 's|https://github.com/||' | sed 's|.git$||')
 cleaned_repo_url=$(echo "$remote_url" | sed -E 's#https?://##' | tr '/' '@')
 
 # 将清理后的结果赋值给变量
@@ -22,14 +23,7 @@ echo "Cleaned URL: $cleaned_repo_url"
 while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
   echo "Starting Trivy scan, attempt #$((RETRY_COUNT + 1))..."
   mkdir -p /opt/cached_resources/trivy_db/results/${cleaned_repo_url}/
-  echo ${WORKSPACE}
-  echo ${BUILDNUMBER}
-  echo ${COMMIT_ID}
-  echo ${GIT_COMMIT}
   /opt/cached_resources/trivy_db/bin/trivy fs --severity HIGH,CRITICAL,MEDIUM,LOW,UNKNOWN  --config /opt/cached_resources/trivy_db/trivy.yaml --cache-dir /opt/cached_resources/trivy_db  --scanners vuln,secret --format json --output /opt/cached_resources/trivy_db/results/${cleaned_repo_url}/result-${sanitizedBranch}-${TIMESTAMP}.json $SCAN_TARGET
-
-  # 执行 Trivy 并捕获退出状态码
-  /opt/cached_resources/trivy_db/bin/trivy fs --severity HIGH,CRITICAL,MEDIUM,LOW,UNKNOWN --cache-dir /opt/cached_resources/trivy_db  --scanners vuln,secret --format json --output result.json $SCAN_TARGET
 
   # 判断 trivy 执行是否成功
   if [ $? -eq 0 ]; then
@@ -51,16 +45,75 @@ if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
     exit 1
 fi
 
-# 使用 grep 查找高危 (HIGH) 或致命 (CRITICAL) 漏洞
-HIGH_CRITICAL_COUNT=$(grep -E '"Severity": "(HIGH|CRITICAL)"' result.json | wc -l)
-
 # 检查漏洞数量
-if [ "$HIGH_CRITICAL_COUNT" -eq 0 ]; then
-    echo "No high or critical vulnerabilities found in the scanned target."
-    exit 0
-else
-    echo " $HIGH_CRITICAL_COUNT High or critical vulnerabilities found:"
-    grep -E '"Severity": "(HIGH|CRITICAL)"' -B 30 -A 30 result.json  # 显示漏洞详情
-    cat result.json  # 显示漏洞详情
-    exit 1  # 返回非零值表示找到高危或致命漏洞
-fi
+cat << 'EOF' > check_vulnerabilities.py
+import json
+import sys
+
+# 检查是否提供了文件路径作为命令行参数
+if len(sys.argv) < 4:
+    print("Usage: python check_vulnerabilities.py <json_file_path>")
+    sys.exit(1)
+
+# 从命令行获取 JSON 文件路径
+json_file_path = sys.argv[1]
+json_putOnRecord_file_path = sys.argv[2]
+repoName = sys.argv[3]
+
+# 加载 JSON 文件，指定编码为 utf-8
+try:
+    with open(json_file_path, encoding='utf-8') as f:
+        data = json.load(f)
+except UnicodeDecodeError:
+    print(f"Error: Failed to decode the file '{json_file_path}'. Please check the file encoding.")
+    sys.exit(1)
+try:
+    with open(json_putOnRecord_file_path, encoding='utf-8') as f:
+        putOnRecordData = json.load(f)
+except UnicodeDecodeError:
+    print(f"Error: Failed to decode the file '{json_file_path}'. Please check the file encoding.")
+    sys.exit(1)
+
+cnt = 0
+putOnRecordCnt = 0
+
+
+def findPutOnRecord(vulnerabilityId, repoName, pkgName):
+    for putOnRecordDataItem in putOnRecordData:
+        if putOnRecordDataItem["VulnerabilityID"] == vulnerabilityId and putOnRecordDataItem[
+            "full_name"] == repoName and putOnRecordDataItem["PkgName"] == pkgName:
+            return True
+    return False
+
+
+# 遍历数据并筛选出直接依赖且有漏洞的包
+for result in data['Results']:
+    if 'Packages' not in result:
+        continue  # 如果没有 Packages 字段，则跳过这个条目
+    for package in result['Packages']:
+        if package.get('Relationship') == 'direct' and 'Vulnerabilities' in result:
+            package_name = package['Name']
+            vulnerabilities = result['Vulnerabilities']
+            for vulnerability in vulnerabilities:
+                if vulnerability['PkgName'] == package_name:
+                    # 输出有漏洞的直接依赖包
+                    if not findPutOnRecord(vulnerability["VulnerabilityID"], repoName, package_name):
+                        cnt += 1
+                        print(f"Direct Dependency: {package['ID']} Vulnerabilities: ", end="")
+                        print(json.dumps(vulnerability, indent=4))
+                    else:
+                        print(f"PutOnRecord Direct Dependency: {package['ID']} Vulnerabilities: ", end="")
+                        print(json.dumps(vulnerability, indent=4))
+                        putOnRecordCnt += 1
+                    print()  # 换
+
+print(f"{putOnRecordCnt} 已备案 vulnerabilities found.")
+if cnt > 0:
+    print(f"{cnt} vulnerabilities found.")
+    sys.exit(cnt)
+else:
+    print(f"No vulnerabilities found.")
+    sys.exit(0)
+EOF
+
+python3 check_vulnerabilities.py /opt/cached_resources/trivy_db/results/${cleaned_repo_url}/result-${sanitizedBranch}-${TIMESTAMP}.json /opt/cached_resources/confirmed/repo_putOnRecord_dependencies.json $repoName
