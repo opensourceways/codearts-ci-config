@@ -1,0 +1,1 @@
+module codearts-ci-config
