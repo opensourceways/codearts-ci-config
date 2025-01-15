@@ -140,6 +140,7 @@ easyeditor-server:
   endpoint_id: c890405da2644f439967c811286d35ad
   owener: taofeihu
   mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  add_pr_check: false
 
 discourse-translator:
   git_url: https://github.com/opensourceways/discourse-translator.git
@@ -147,6 +148,7 @@ discourse-translator:
   endpoint_id: 2c958179517d40ee93160ce7a835882f
   owener: taoyiwei
   mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  add_pr_check: false
 
 discourse_docker:
   git_url: https://github.com/opensourceways/discourse_docker.git
@@ -154,6 +156,7 @@ discourse_docker:
   endpoint_id: 0a975719121f4531ace90a8573ab2297
   owener: taoyiwei
   mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  add_pr_check: false
 
 easypackages:
   git_url: https://github.com/opensourceways/easypackages.git
@@ -161,6 +164,7 @@ easypackages:
   endpoint_id: cbdc908292b64c32b3db92af557b849d
   owener: jianglong
   mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  add_pr_check: false
 
 infraAIService:
   git_url: https://github.com/opensourceways/infraAIService.git
@@ -168,6 +172,7 @@ infraAIService:
   endpoint_id: a5325a52767c480cbb8c7a6665951f1d
   owener: jianglong
   mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  add_pr_check: false
 
 signatrust:
   git_url: https://gitee.com/openeuler/signatrust.git
@@ -175,6 +180,7 @@ signatrust:
   endpoint_id: 16132089d61745fb8c6556ab2928a438
   owener: jianglong
   mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  add_pr_check: false
 
 xihe-message-server:
   git_url: https://github.com/opensourceways/xihe-message-server.git
@@ -182,6 +188,7 @@ xihe-message-server:
   endpoint_id: 78d88278917a47e6939746bd1fdaf12d
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-inference-evaluate:
   git_url: https://github.com/opensourceways/xihe-inference-evaluate.git
@@ -189,6 +196,7 @@ xihe-inference-evaluate:
   endpoint_id: 5626cb3f79f5463596a337b777d9eafa
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-cronjob:
   git_url: https://github.com/opensourceways/xihe-cronjob.git
@@ -196,6 +204,7 @@ xihe-cronjob:
   endpoint_id: 367146029f674065a52e6ffb521e03eb
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-sdk:
   git_url: https://github.com/opensourceways/xihe-sdk.git
@@ -203,6 +212,7 @@ xihe-sdk:
   endpoint_id: df706000a62443e8accca0a19cfa38a5
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-audit-sync-sdk:
   git_url: https://github.com/opensourceways/xihe-audit-sync-sdk.git
@@ -210,6 +220,7 @@ xihe-audit-sync-sdk:
   endpoint_id: 770e7c60cfd9451fa4c07ad31c8fa6b1
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-sync-repo:
   git_url: https://github.com/opensourceways/xihe-sync-repo.git
@@ -217,6 +228,7 @@ xihe-sync-repo:
   endpoint_id: 9a64a5fbef484fa19882b59b7e87ef4e
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-grpc-protocol:
   git_url: https://github.com/opensourceways/xihe-grpc-protocol.git
@@ -224,6 +236,7 @@ xihe-grpc-protocol:
   endpoint_id: 684eb72bf721453bb0a0fa7996dde6c0
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-extra-services:
   git_url: https://github.com/opensourceways/xihe-extra-services.git
@@ -231,6 +244,7 @@ xihe-extra-services:
   endpoint_id: 3a76c1785dda4b13a399937d1978f240
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-statistics:
   git_url: https://github.com/opensourceways/xihe-statistics.git
@@ -238,6 +252,7 @@ xihe-statistics:
   endpoint_id: c50b139ae1534aec98c9553fe23f3f8a
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 xihe-training-center:
   git_url: https://github.com/opensourceways/xihe-training-center.git
@@ -245,6 +260,7 @@ xihe-training-center:
   endpoint_id: 07bda7152c8b458994958a003dbd7528
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 copr_docker:
   git_url: https://github.com/opensourceways/copr_docker.git
@@ -252,6 +268,7 @@ copr_docker:
   endpoint_id: b63ef1d504df44d3adbff79fc93075d5
   owener: lichaoran
   mail: lichaoran1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 wsl:
   git_url: https://gitee.com/openeuler/wsl.git
@@ -259,6 +276,7 @@ wsl:
   endpoint_id: 96a4226d662f4c798ddeddf891211b08
   owener: wenlang
   mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 lxc-ci:
   git_url: https://github.com/lxc/lxc-ci.git
@@ -266,6 +284,7 @@ lxc-ci:
   endpoint_id: 3a76c1785dda4b13a399937d1978f240
   owener: wenlang
   mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 app-cla-server:
   git_url: https://github.com/opensourceways/app-cla-server.git
@@ -273,3 +292,4 @@ app-cla-server:
   endpoint_id: e9f10c2263914215bb617a9ae29125bc
   owener: chenzeng
   mail: chenzeng2@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
