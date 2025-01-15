@@ -25,7 +25,7 @@ BigFiles:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/58d2a62564c14ce1815dcce4d1064020?from=in-project&v=1
   endpoint_id: 213f55413c51481da30769de540a5577
   owner: jufangqun, zhouyi, zhaokunhang
-  mail: jufangqun@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
+  mail: jufangqun@huawei.com, zhouyi198@h-partners.com, wenlang1@h-partners.com, zhaokunhang@huawei.com
 
 certification-server:
   git_url: https://github.com/opensourceways/certification-server.git
@@ -74,7 +74,7 @@ om-webserver:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/096058e3d0e941ec8eba54e20a928f3f?from=in-project&v=1
   endpoint_id: 52be143a360543c6919f5eff2d89ba1e
   owener: taofeihu
-  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com
+  mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   branch: stable
   
 oneid-server:
@@ -82,7 +82,7 @@ oneid-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ad194e75781f4cde9fe483e15e4d8c69?from=in-project&v=1
   endpoint_id: 70c928f5254f42f5af7980c4dd274036
   owener: taofeihu
-  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
 
 datastat-server:
   git_url: https://github.com/opensourceways/datastat-server.git
@@ -125,7 +125,7 @@ xihe-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5c049736c2cd46ba9a4c8bbcbc5e0fca?from=in-project&v=1
   endpoint_id: 70d9403856274939a703351894b1f1d3
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
 
 om-collection:
   git_url: https://github.com/opensourceways/om-collection.git
@@ -133,3 +133,143 @@ om-collection:
   endpoint_id: b9564ae4f53c456b98143869f2e1501b
   owener: wucaiping
   mail: wucaiping1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+easyeditor-server:
+  git_url: https://github.com/opensourceways/easyeditor-server.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/8e1fab9a268e4486a156cc5b005f4366?from=in-project&v=1
+  endpoint_id: c890405da2644f439967c811286d35ad
+  owener: taofeihu
+  mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+discourse-translator:
+  git_url: https://github.com/opensourceways/discourse-translator.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/8b760d84f5084adb876462a531a8b8b8?from=in-project&v=1
+  endpoint_id: 2c958179517d40ee93160ce7a835882f
+  owener: taoyiwei
+  mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+discourse_docker:
+  git_url: https://github.com/opensourceways/discourse_docker.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ea1a46b928af4051bdadfa2dfb4a9bf5?from=in-project&v=1
+  endpoint_id: 0a975719121f4531ace90a8573ab2297
+  owener: taoyiwei
+  mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+easypackages:
+  git_url: https://github.com/opensourceways/easypackages.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/0ccbfdbfadcd4cbb98699da9dc4b6d7f?from=in-project&v=1
+  endpoint_id: cbdc908292b64c32b3db92af557b849d
+  owener: jianglong
+  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+infraAIService:
+  git_url: https://github.com/opensourceways/infraAIService.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/e24dac2152cd4582ae3bb7deaf86c5eb?from=in-project&v=1
+  endpoint_id: a5325a52767c480cbb8c7a6665951f1d
+  owener: jianglong
+  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+signatrust:
+  git_url: https://gitee.com/openeuler/signatrust.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/82cd51f36206412bafb07ca0b3005f82?from=in-project&v=1
+  endpoint_id: 16132089d61745fb8c6556ab2928a438
+  owener: jianglong
+  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+
+xihe-message-server:
+  git_url: https://github.com/opensourceways/xihe-message-server.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2bcf6afa75e34013a605d5c88bc36bd9?from=in-project&v=1
+  endpoint_id: 78d88278917a47e6939746bd1fdaf12d
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-inference-evaluate:
+  git_url: https://github.com/opensourceways/xihe-inference-evaluate.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/6367d5825f714e5c92bab96b0d036b0d?from=in-project&v=1
+  endpoint_id: 5626cb3f79f5463596a337b777d9eafa
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-cronjob:
+  git_url: https://github.com/opensourceways/xihe-cronjob.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/828dfcff6d494500a735981241b1ab22?from=in-project&v=1
+  endpoint_id: 367146029f674065a52e6ffb521e03eb
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-sdk:
+  git_url: https://github.com/opensourceways/xihe-sdk.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/da431a9d65ad4117a7d703765b26dc66?from=in-project&v=1
+  endpoint_id: df706000a62443e8accca0a19cfa38a5
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-audit-sync-sdk:
+  git_url: https://github.com/opensourceways/xihe-audit-sync-sdk.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/20a6cbe4aa3e46b2889e4120d432beb4?from=in-project&v=1
+  endpoint_id: 770e7c60cfd9451fa4c07ad31c8fa6b1
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-sync-repo:
+  git_url: https://github.com/opensourceways/xihe-sync-repo.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/18742502e1f94b0fa02e10b781e7903a?from=in-project&v=1
+  endpoint_id: 9a64a5fbef484fa19882b59b7e87ef4e
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-grpc-protocol:
+  git_url: https://github.com/opensourceways/xihe-grpc-protocol.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/1d6ae681817e43eb8e2d561a2d5230d8?from=in-project&v=1
+  endpoint_id: 684eb72bf721453bb0a0fa7996dde6c0
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-extra-services:
+  git_url: https://github.com/opensourceways/xihe-extra-services.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2974b7f100934a7ebabb0d3088da7618?from=in-project&v=1
+  endpoint_id: 3a76c1785dda4b13a399937d1978f240
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-statistics:
+  git_url: https://github.com/opensourceways/xihe-statistics.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2710cb7835c0487ca220f9fac726a332?from=in-project&v=1
+  endpoint_id: c50b139ae1534aec98c9553fe23f3f8a
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+xihe-training-center:
+  git_url: https://github.com/opensourceways/xihe-training-center.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/b0068df4ee544169af01eb6e32ec7bf6?from=in-project&v=1
+  endpoint_id: 07bda7152c8b458994958a003dbd7528
+  owener: zhongyuanke
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+copr_docker:
+  git_url: https://github.com/opensourceways/copr_docker.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/50101c98c86c4caab45ccae399a4e71e?from=in-project&v=1
+  endpoint_id: b63ef1d504df44d3adbff79fc93075d5
+  owener: lichaoran
+  mail: lichaoran1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+wsl:
+  git_url: https://gitee.com/openeuler/wsl.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/c3e94d5daf44479292969c5b3c0af2ee?from=in-project&v=1
+  endpoint_id: 96a4226d662f4c798ddeddf891211b08
+  owener: wenlang
+  mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+lxc-ci:
+  git_url: https://github.com/lxc/lxc-ci.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/86f96f774cb34130bd1ee7b65c381b05?from=in-project&v=1
+  endpoint_id: 3a76c1785dda4b13a399937d1978f240
+  owener: wenlang
+  mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+
+app-cla-server:
+  git_url: https://github.com/opensourceways/app-cla-server.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2bfa14072aad44538e40dae5eba5c82d?from=in-project&v=1
+  endpoint_id: e9f10c2263914215bb617a9ae29125bc
+  owener: chenzeng
+  mail: chenzeng2@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
