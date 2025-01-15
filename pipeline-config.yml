@@ -296,3 +296,27 @@ app-cla-server:
   owener: chenzeng
   mail: chenzeng2@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
+
+PDFMathTranslate:
+  git_url: https://github.com/opensourceways/PDFMathTranslate.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/d06a1801b36f40d7b08afdd99b1a07a3?from=in-project&v=1
+  endpoint_id: 7e00620a65564aaca38930a32d3f839b
+  owener: jianglong
+  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  check_label: false
+
+ai-proxy:
+  git_url: https://github.com/opensourceways/ai-proxy.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/593234632a5d4fc7a08ea89f2428567f?from=in-project&v=1
+  endpoint_id: 46b71ceed73e40b0bbf5052e971f0bbc
+  owener: jianglong
+  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  check_label: false
+
+easymodel-plugins:
+  git_url: https://github.com/opensourceways/easymodel-plugins.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5fe23d3d6a944c0bb6a12a8beff54339?from=in-project&v=1
+  endpoint_id: dc9efd82355c469fa268da96bc7285c7
+  owener: jianglong
+  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  check_label: false
