@@ -126,6 +126,7 @@ xihe-server:
   endpoint_id: 70d9403856274939a703351894b1f1d3
   owener: zhongyuanke
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  add_pr_check: false
 
 om-collection:
   git_url: https://github.com/opensourceways/om-collection.git
