@@ -193,8 +193,8 @@ xihe-message-server:
   mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
-xihe-inference-evaluate:
-  git_url: https://github.com/opensourceways/xihe-inference-evaluate.git
+xihe-jupyter-server:
+  git_url: https://github.com/opensourceways/xihe-jupyter-server.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/6367d5825f714e5c92bab96b0d036b0d?from=in-project&v=1
   endpoint_id: 5626cb3f79f5463596a337b777d9eafa
   owener: zhongyuanke
