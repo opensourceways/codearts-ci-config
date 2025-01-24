@@ -1,6 +1,5 @@
 import os
 import shutil
-import stat
 
 import yaml
 import subprocess
@@ -14,11 +13,17 @@ GITHUB_TOKEN = ""
 CODEARTS_PASSWORD = ""
 CODEARTS_URL = ""
 LOCAL_GITHUB_FOLDER = "../github_workflow/.github"
-PROJECT_NAME = ["message-push", "message-push", "message-collect", "BigFiles", "certification-server", "message-manager",
-                "EasySoftwareService", "EasySoftwareInput", "easysoftware-autoupgrade", "go-gitcode", "om-webserver",
-                "oneid-server", "datastat-server", "EasySearch", "EasySearch-Import", "om-kafka","oneid-website",
-                "xihe-server"]
+PROJECT_NAME = ["message-transfer", "message-push", "message-collect", "BigFiles", "certification-server",
+                "message-manager", "EasySoftwareService", "EasySoftwareInput", "easysoftware-autoupgrade", "go-gitcode",
+                "om-webserver", "datastat-server", "EasySearch", "EasySearch-Import", "om-kafka", "om-collection",
+                "xihe-server", "discourse-translator", "discourse_docker", "easypackages", "infraAIService",
+                "copr_docker", "app-cla-server", "DataMagic"]
+TODO_PROJECT_NAME = ["oneid-website", "oneid-server", "easyeditor-server", "xihe-message-server",
+                     "xihe-inference-evaluate", "xihe-cronjob", "xihe-audit-sync-sdk", "xihe-sdk", "xihe-sync-repo",
+                     "xihe-grpc-protocol", "xihe-extra-services", "xihe-statistics", "xihe-training-center"]
+SINGLE_PROJECT_NAME = ["om-webserver"]
 
+PROJECT = PROJECT_NAME
 ruleset_name = 'gate_check'
 
 
@@ -53,7 +58,6 @@ def create_secret(owner, repo, secret_name, encrypted_value, key_id):
     }
     response = requests.put(url, headers=headers, json=data)
     response.raise_for_status()  # 如果请求失败，抛出异常
-    print("Secret added successfully.")
 
 
 def create_multiple_secrets(owner, repo, secrets):
@@ -97,7 +101,6 @@ def clone_repo(owner, repo):
 
 def prepare_merge(owner, repo, branch):
     os.chdir(repo)
-    print(branch, branch == "~DEFAULT_BRANCH")
     if branch == "~DEFAULT_BRANCH":
         branch = get_default_branch(owner, repo)
     subprocess.run(["git", "checkout", branch])
@@ -120,7 +123,6 @@ def prepare_merge(owner, repo, branch):
             if os.path.exists(destination):
                 if os.path.isdir(destination):
                     # 如果是子文件夹，递归合并内容
-                    print(f"Merging contents of '{source}' into '{destination}'")
                     merge_directories(source, destination)
                 else:
                     print(f"Warning: '{item}' already exists in the target folder. Skipping.")
@@ -139,14 +141,11 @@ def merge_directories(source_dir, target_dir):
 
         if os.path.isdir(source_item):
             if not os.path.exists(target_item):
-                print(f"Copying new folder '{source_item}' to '{target_dir}'")
                 shutil.copytree(source_item, target_item)
             else:
-                print(f"Merging contents of '{source_item}' into '{target_item}'")
                 merge_directories(source_item, target_item)
         else:
             # 复制文件
-            print(f"Copying file '{source_item}' to '{target_dir}'")
             shutil.copy2(source_item, target_item)
 
 
@@ -168,10 +167,8 @@ def git_commit_and_push(owner, repo):
     result = subprocess.run(push_command)
     os.chdir("..")
     if result.returncode == 0:
-        print("Push successful.")
         return True
     else:
-        print("Push failed.")
         return False
 
 
@@ -189,7 +186,6 @@ def download_yaml_file():
         # 将内容写入本地文件，覆盖已存在的文件
         with open("pipeline-config.yml", 'wb') as file:
             file.write(response.content)
-        print(f"Successfully downloaded and saved to pipeline-config.yml.")
     else:
         print(f"Failed to download file: {response.status_code} - {response.text}")
 
@@ -205,17 +201,26 @@ def get_attr(topic, data):
     if attributes and all(attributes.get(k) for k in ['git_url', 'pipeline_url', 'endpoint_id']):
         return attributes
 
-    print("One or more required attributes are empty or topic not found.")
     return None
 
 
-def set_branch_ruleset(owner, repo, branches):
+def set_branch_ruleset(owner, repo, branches, needCheckLabel):
     # 设置请求头
     headers = {
         'Accept': 'application/vnd.github+json',
         'Authorization': f'Bearer {GITHUB_TOKEN}'
     }
     # 请求体
+    requiredStausChecks = [{
+        "context": "check-branch-naming",
+        "integration_id": 15368,
+    }]
+    if needCheckLabel:
+        requiredStausChecks.append({
+            "context": "check-label",
+            "integration_id": 15368,
+        })
+    print(requiredStausChecks)
     data = {
         "name": "gate_check",
         "target": "branch",
@@ -229,25 +234,13 @@ def set_branch_ruleset(owner, repo, branches):
         },
         "rules": [
             {
-                "type": "deletion",
-            },
-            {
                 "type": "non_fast_forward",
             },
             {
                 "type": "required_status_checks",
                 "parameters": {
-                    "do_not_enforce_on_create": False,
-                    "required_status_checks": [
-                        {
-                            "context": "check-label",
-                            "integration_id": 15368,
-                        },
-                        {
-                            "context": "check-branch-naming",
-                            "integration_id": 15368,
-                        },
-                    ],
+                    "do_not_enforce_on_create": True,
+                    "required_status_checks": requiredStausChecks,
                     "strict_required_status_checks_policy": False
                 }
             },
@@ -263,7 +256,6 @@ def set_branch_ruleset(owner, repo, branches):
             }
         ]
     }
-    print(data)
     url = f'https://api.github.com/repos/{owner}/{repo}/rulesets'
     # 发送请求
     response = requests.post(
@@ -274,9 +266,9 @@ def set_branch_ruleset(owner, repo, branches):
 
     # 输出响应结果
     if response.status_code == 201:
-        print("规则集创建成功！")
+        print(f"规则集创建成功! -- {repo}")
     else:
-        print(f"创建失败：{response.status_code} - {response.json()}")
+        print(f"创建失败：{response.status_code} - {response.json()} -- {repo}")
 
 
 def del_branch_ruleset(owner, repo):
@@ -323,27 +315,38 @@ def get_default_branch(owner, repo):
 
     # 发送 GET 请求以获取仓库信息
     response = requests.get(url, headers=headers)
-    print(owner, repo, response.status_code, "11111")
     if response.status_code == 200:
         repo_info = response.json()
         default_branch = repo_info.get('default_branch')
-        print(f"默认分支名称: {default_branch}")
         return default_branch
     else:
         print("获取仓库信息失败:", response.status_code, response.json())
         return ""
 
 
+def get_protect_branch(owner, repo):
+    # 请求 GitHub API
+    url = f"https://api.github.com/repos/{owner}/{repo}/branches"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+    response = requests.get(url, headers=headers)
+    branches = response.json()
+
+    # 筛选 release/ 开头的分支
+    release_branches = [branch["name"] for branch in branches if branch["name"].startswith("release/")]
+    return release_branches
+
+
 def main():
     download_yaml_file()
     data = load_yaml()
-    for projectName in PROJECT_NAME:
+    for projectName in PROJECT:
         attrs = get_attr(projectName, data)
         if not attrs:
             return
         git_url = attrs['git_url']
         pipeline_url = attrs['pipeline_url']
         endpoint_id = attrs['endpoint_id']
+        need_check_label = attrs.get('check_label', True)
         branches = attrs.get('branch', "")
         git_url = git_url.replace('https://github.com/', '').replace('.git', '')
         # 拆分 URL
@@ -364,14 +367,15 @@ def main():
         clone_repo(owner, repo)
         del_branch_ruleset(owner, repo)
         branches_list = branches.replace(" ", "").split(",") if branches else []
-        branches_list.append("~DEFAULT_BRANCH")
+        branches_list.extend(get_protect_branch(owner, repo))
         for branch in branches_list:
             prepare_merge(owner, repo, branch)
             if not git_commit_and_push(owner, repo):
                 return
-        branches_list.append("release/*")
-        branches_format = ["refs/heads/%s" % branch if branch != "~DEFAULT_BRANCH" else branch for branch in branches_list]
-        set_branch_ruleset(owner, repo, branches_format)
+        branches_list = ["~DEFAULT_BRANCH", "release/*"]
+        branches_format = ["refs/heads/%s" % branch if branch != "~DEFAULT_BRANCH" else branch for branch in
+                           branches_list]
+        set_branch_ruleset(owner, repo, branches_format, need_check_label)
 
 
 if __name__ == "__main__":
