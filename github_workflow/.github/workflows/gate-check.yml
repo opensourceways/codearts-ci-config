@@ -2,11 +2,16 @@ name: Gate Check
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]  # 在PR打开、同步、重新打开时触发
+    types: [opened, synchronize, reopened]
+    # 在PR打开、同步、重新打开时触发
+    branches:
+      - main
+      - master
+      - release/*
 
 jobs:
   codearts-check:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Check and Remove Label
         run: |
