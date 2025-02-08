@@ -8,9 +8,9 @@ import (
 	"bytes"
 	"crypto/hmac"
 	"crypto/sha256"
+	"io"
 
 	"fmt"
-	"io/ioutil"
 	"net/http"
 	"sort"
 	"strings"
@@ -27,7 +27,7 @@ const (
 )
 
 func hmacsha256(keyByte []byte, dataStr string) ([]byte, error) {
-	hm := hmac.New(sha256.New, []byte(keyByte))
+	hm := hmac.New(sha256.New, keyByte)
 	if _, err := hm.Write([]byte(dataStr)); err != nil {
 		return nil, err
 	}
@@ -124,11 +124,11 @@ func RequestPayload(request *http.Request) ([]byte, error) {
 	if request.Body == nil {
 		return []byte(""), nil
 	}
-	bodyByte, err := ioutil.ReadAll(request.Body)
+	bodyByte, err := io.ReadAll(request.Body)
 	if err != nil {
 		return []byte(""), err
 	}
-	request.Body = ioutil.NopCloser(bytes.NewBuffer(bodyByte))
+	request.Body = io.NopCloser(bytes.NewBuffer(bodyByte))
 	return bodyByte, err
 }
 
