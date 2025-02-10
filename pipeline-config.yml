@@ -127,8 +127,7 @@ xihe-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5c049736c2cd46ba9a4c8bbcbc5e0fca?from=in-project&v=1
   endpoint_id: 70d9403856274939a703351894b1f1d3
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 om-collection:
@@ -191,8 +190,7 @@ xihe-message-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2bcf6afa75e34013a605d5c88bc36bd9?from=in-project&v=1
   endpoint_id: 78d88278917a47e6939746bd1fdaf12d
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-jupyter-server:
@@ -200,8 +198,7 @@ xihe-jupyter-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/6367d5825f714e5c92bab96b0d036b0d?from=in-project&v=1
   endpoint_id: 5626cb3f79f5463596a337b777d9eafa
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-cronjob:
@@ -209,8 +206,7 @@ xihe-cronjob:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/828dfcff6d494500a735981241b1ab22?from=in-project&v=1
   endpoint_id: 367146029f674065a52e6ffb521e03eb
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-sdk:
@@ -218,8 +214,7 @@ xihe-sdk:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/da431a9d65ad4117a7d703765b26dc66?from=in-project&v=1
   endpoint_id: df706000a62443e8accca0a19cfa38a5
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-audit-sync-sdk:
@@ -227,8 +222,7 @@ xihe-audit-sync-sdk:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/20a6cbe4aa3e46b2889e4120d432beb4?from=in-project&v=1
   endpoint_id: 770e7c60cfd9451fa4c07ad31c8fa6b1
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-sync-repo:
@@ -236,8 +230,7 @@ xihe-sync-repo:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/18742502e1f94b0fa02e10b781e7903a?from=in-project&v=1
   endpoint_id: 9a64a5fbef484fa19882b59b7e87ef4e
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-grpc-protocol:
@@ -245,8 +238,7 @@ xihe-grpc-protocol:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/1d6ae681817e43eb8e2d561a2d5230d8?from=in-project&v=1
   endpoint_id: 684eb72bf721453bb0a0fa7996dde6c0
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-extra-services:
@@ -254,8 +246,7 @@ xihe-extra-services:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2974b7f100934a7ebabb0d3088da7618?from=in-project&v=1
   endpoint_id: 3a76c1785dda4b13a399937d1978f240
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-statistics:
@@ -263,8 +254,7 @@ xihe-statistics:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2710cb7835c0487ca220f9fac726a332?from=in-project&v=1
   endpoint_id: c50b139ae1534aec98c9553fe23f3f8a
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-training-center:
@@ -272,8 +262,7 @@ xihe-training-center:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/b0068df4ee544169af01eb6e32ec7bf6?from=in-project&v=1
   endpoint_id: 07bda7152c8b458994958a003dbd7528
   owener: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, 
-yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
   check_label: false
 
 copr_docker:
