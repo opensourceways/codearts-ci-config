@@ -8,12 +8,12 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"huaweicloud.com/apig/go/signer/core"
-	"huaweicloud.com/apig/go/signer/handler"
 	"io"
 	"math"
 	"net/http"
 	"os"
+	"resolver/core"
+	"resolver/handler"
 )
 
 var hssAssetList = []HssAsset{{
