@@ -15,7 +15,7 @@
 再新建一个挂载目录 /data  (mkdir) 
 
 再挂在磁盘 mount sdb /data
-![img.png](images/img.png)
+![img2025031001.png](images/img2025031001.png)
 待扫描数据在 /data/jobs
 
 5.根目录新建 scan.sh

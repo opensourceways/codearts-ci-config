@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-var k8sClusterName = "mail_cn_north_1"
+var k8sClusterName = "openEuler_hk"
 
 var xVaultToken = os.Getenv("xVaultToken")
 
