@@ -379,7 +379,7 @@ APIMagic:
   check_label: false
 
 datastat-manage-website:
-  git_url: https://github.com/opensourceways/datastat-manage-websiteebsite.git
+  git_url: https://github.com/opensourceways/datastat-manage-website.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/6c04c84fb3254256946729ac97971f4f?from=in-project&v=1
   endpoint_id: efe813053ad94d8fb7803d8f0d08e52d
   owener: jun.zhongjun
