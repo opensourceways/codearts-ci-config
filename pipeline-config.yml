@@ -369,3 +369,11 @@ oneid-website:
   owener: gongzhuangbang
   mail: taofeihu1@huawei.com, gongzhuangbang1@huawei.com, guozhen35@h-partners.com
   check_label: false
+
+  APIMagic:
+    git_url: https://github.com/opensourceways/APIMagic.git
+    pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/810e6e008ca64b3e8ccca405c2b3b5f1?from=in-project&v=1
+    endpoint_id: d46b132439a64e1fbda550e01430448b
+    owener: jun.zhongjun
+    mail: wucaiping1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, zhaoyan150@huawei.com
+    check_label: false
