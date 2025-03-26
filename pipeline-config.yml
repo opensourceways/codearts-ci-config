@@ -3,7 +3,7 @@ message-push:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ea5489fc52984d36a1b33fc6378ddb85?from=out-project&v=1
   endpoint_id: a00c8423f08b4f2fb68c72bd739d4f48
   owner: shishupei, zhaokunhang,hourunze
-  mail: shishupei@huawei.com, zhaokunhang@huawei.com,hourunze@h-partners.com
+  mail: shishupei@huawei.com, zhaokunhang@huawei.com
   branch: release/openeuler
 
 message-transfer:
@@ -46,7 +46,7 @@ EasySoftwareService:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/99c7d59e96c74d5c963cbf39a9049518?from=in-project&v=1
   endpoint_id: 582a9b18ea9e4d8993b4461761d3f1d3
   owner: xiechengzhi, zhaiwenjie, zhaokunhang
-  mail: xiechengzhi3@h-partners.com, zhaiwenjie1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: xiechengzhi3@h-partners.com, zhaiwenjie1@huawei.com, zhaokunhang@huawei.com
 
 EasySoftwareInput:
   git_url: https://github.com/opensourceways/EasySoftwareInput.git
@@ -82,7 +82,7 @@ oneid-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ad194e75781f4cde9fe483e15e4d8c69?from=in-project&v=1
   endpoint_id: 70c928f5254f42f5af7980c4dd274036
   owner: taofeihu
-  mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun
   check_label: false
 
 datastat-server:
@@ -97,7 +97,7 @@ EasySearch:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5288ca277b674b3393450c0bd0f0d6d5?from=out-project&v=1
   endpoint_id: 7e0dd4f853a44979a8d51ea779b1a1ac
   owner: lifan
-  mail: lifan140@h-partners.com, zhaokunhang@huawei.com,jun.zhongjun@huawei.com
+  mail: lifan140@h-partners.com, zhaokunhang@huawei.com
   branch: refactor
 
 EasySearch-Import:
@@ -105,21 +105,21 @@ EasySearch-Import:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/0dfc2b00b34c48868ac855f62a1586aa?from=in-project&v=1
   endpoint_id: 7fbfbfdb3ef44a82b1a4dcdfcd5a2506
   owner: lifan
-  mail: lifan140@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: lifan140@h-partners.com, zhaokunhang@huawei.com
   
 om-kafka:
   git_url: https://github.com/opensourceways/om-kafka.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/434e2323aa3e44449b7fe5cc2a24c2b6?from=out-project&v=1
   endpoint_id: 833845f535f344a381b9466c16ee3840
   owner: taofeihu
-  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: taofeihu1@huawei.com, zhaokunhang@huawei.com
 
 xihe-server:
   git_url: https://github.com/opensourceways/xihe-server
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5c049736c2cd46ba9a4c8bbcbc5e0fca?from=in-project&v=1
   endpoint_id: 70d9403856274939a703351894b1f1d3
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 om-collection:
@@ -134,7 +134,7 @@ easyeditor-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/8e1fab9a268e4486a156cc5b005f4366?from=in-project&v=1
   endpoint_id: c890405da2644f439967c811286d35ad
   owner: taofeihu
-  mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: taofeihu1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 discourse-translator:
@@ -142,7 +142,7 @@ discourse-translator:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/8b760d84f5084adb876462a531a8b8b8?from=in-project&v=1
   endpoint_id: 2c958179517d40ee93160ce7a835882f
   owner: taoyiwei
-  mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 discourse_docker:
@@ -150,7 +150,7 @@ discourse_docker:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/ea1a46b928af4051bdadfa2dfb4a9bf5?from=in-project&v=1
   endpoint_id: 0a975719121f4531ace90a8573ab2297
   owner: taoyiwei
-  mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: taoyiwei1@h-partners.com, jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 easypackages:
@@ -158,7 +158,7 @@ easypackages:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/0ccbfdbfadcd4cbb98699da9dc4b6d7f?from=in-project&v=1
   endpoint_id: cbdc908292b64c32b3db92af557b849d
   owner: jianglong
-  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 infraAIService:
@@ -166,7 +166,7 @@ infraAIService:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/e24dac2152cd4582ae3bb7deaf86c5eb?from=in-project&v=1
   endpoint_id: a5325a52767c480cbb8c7a6665951f1d
   owner: jianglong
-  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 signatrust:
@@ -174,7 +174,7 @@ signatrust:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/82cd51f36206412bafb07ca0b3005f82?from=in-project&v=1
   endpoint_id: 16132089d61745fb8c6556ab2928a438
   owner: jianglong
-  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: jianglong15@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 xihe-message-server:
@@ -182,7 +182,7 @@ xihe-message-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2bcf6afa75e34013a605d5c88bc36bd9?from=in-project&v=1
   endpoint_id: 78d88278917a47e6939746bd1fdaf12d
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-jupyter-server:
@@ -190,7 +190,7 @@ xihe-jupyter-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/6367d5825f714e5c92bab96b0d036b0d?from=in-project&v=1
   endpoint_id: 5626cb3f79f5463596a337b777d9eafa
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-cronjob:
@@ -198,7 +198,7 @@ xihe-cronjob:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/828dfcff6d494500a735981241b1ab22?from=in-project&v=1
   endpoint_id: 367146029f674065a52e6ffb521e03eb
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-sdk:
@@ -206,7 +206,7 @@ xihe-sdk:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/da431a9d65ad4117a7d703765b26dc66?from=in-project&v=1
   endpoint_id: df706000a62443e8accca0a19cfa38a5
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-audit-sync-sdk:
@@ -214,7 +214,7 @@ xihe-audit-sync-sdk:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/20a6cbe4aa3e46b2889e4120d432beb4?from=in-project&v=1
   endpoint_id: 770e7c60cfd9451fa4c07ad31c8fa6b1
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-sync-repo:
@@ -222,7 +222,7 @@ xihe-sync-repo:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/18742502e1f94b0fa02e10b781e7903a?from=in-project&v=1
   endpoint_id: 9a64a5fbef484fa19882b59b7e87ef4e
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-grpc-protocol:
@@ -230,7 +230,7 @@ xihe-grpc-protocol:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/1d6ae681817e43eb8e2d561a2d5230d8?from=in-project&v=1
   endpoint_id: 684eb72bf721453bb0a0fa7996dde6c0
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-extra-services:
@@ -238,7 +238,7 @@ xihe-extra-services:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2974b7f100934a7ebabb0d3088da7618?from=in-project&v=1
   endpoint_id: 3a76c1785dda4b13a399937d1978f240
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-statistics:
@@ -246,7 +246,7 @@ xihe-statistics:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2710cb7835c0487ca220f9fac726a332?from=in-project&v=1
   endpoint_id: c50b139ae1534aec98c9553fe23f3f8a
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 xihe-training-center:
@@ -254,7 +254,7 @@ xihe-training-center:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/b0068df4ee544169af01eb6e32ec7bf6?from=in-project&v=1
   endpoint_id: 07bda7152c8b458994958a003dbd7528
   owner: zhongyuanke
-  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: zhongyuanke@huawei.com, songhaodong1@h-partners.com, gongxianjin6@h-partners.com, yangxinyue14@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 copr_docker:
@@ -262,7 +262,7 @@ copr_docker:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/50101c98c86c4caab45ccae399a4e71e?from=in-project&v=1
   endpoint_id: b63ef1d504df44d3adbff79fc93075d5
   owner: lichaoran
-  mail: lichaoran1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: lichaoran1@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 wsl:
@@ -270,7 +270,7 @@ wsl:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/c3e94d5daf44479292969c5b3c0af2ee?from=in-project&v=1
   endpoint_id: 96a4226d662f4c798ddeddf891211b08
   owner: wenlang
-  mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 lxc-ci:
@@ -278,7 +278,7 @@ lxc-ci:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/86f96f774cb34130bd1ee7b65c381b05?from=in-project&v=1
   endpoint_id: 3a76c1785dda4b13a399937d1978f240
   owner: wenlang
-  mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 app-cla-server:
@@ -286,7 +286,7 @@ app-cla-server:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/2bfa14072aad44538e40dae5eba5c82d?from=in-project&v=1
   endpoint_id: e9f10c2263914215bb617a9ae29125bc
   owner: chenzeng
-  mail: chenzeng2@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, shishupei@huawei.com
+  mail: chenzeng2@huawei.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, shishupei@huawei.com
   check_label: false
 
 PDFMathTranslate:
@@ -294,7 +294,7 @@ PDFMathTranslate:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/d06a1801b36f40d7b08afdd99b1a07a3?from=in-project&v=1
   endpoint_id: 7e00620a65564aaca38930a32d3f839b
   owner: jianglong
-  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 ai-proxy:
@@ -302,7 +302,7 @@ ai-proxy:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/593234632a5d4fc7a08ea89f2428567f?from=in-project&v=1
   endpoint_id: 46b71ceed73e40b0bbf5052e971f0bbc
   owner: jianglong
-  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 easymodel-plugins:
@@ -310,7 +310,7 @@ easymodel-plugins:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5fe23d3d6a944c0bb6a12a8beff54339?from=in-project&v=1
   endpoint_id: dc9efd82355c469fa268da96bc7285c7
   owner: jianglong
-  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com
+  mail: jianglong15@huawei.com, taoyiwei1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com
   check_label: false
 
 DataMagic:
@@ -327,7 +327,7 @@ easywhisperx:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/5aba0133233f466d9cad88339d0be56f?from=out-project&v=1
   endpoint_id: 6b6103fb269f4a6a868df74f5d6a9d02
   owner: jianglong
-  mail: jianglong15@huawei.com, wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, jun.zhongjun@huawei.com, zhaoyan150@huawei.com
+  mail: jianglong15@huawei.com, wenlang1@h-partners.com, zhouyi198@h-partners.com, zhaokunhang@huawei.com, zhaoyan150@huawei.com
   check_label: true
 
 certification-website:
