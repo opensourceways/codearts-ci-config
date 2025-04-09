@@ -332,7 +332,7 @@ easywhisperx:
 
 certification-website:
   git_url: https://github.com/opensourceways/certification-website.git
-  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/c638474cbe1f41bb8639b2155580cd8f?from=out-project&v=1
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/9d9d08d64cd5494180a711c07ded4fdc?from=in-project&v=1
   endpoint_id: 12ebd5f9f3be404fa83c1c641686a01b
   owner: gongzhuangbang
   mail: gongzhuangbang1@huawei.com, liuyong269@h-partners.com
@@ -383,7 +383,7 @@ datastat-manage-website:
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/6c04c84fb3254256946729ac97971f4f?from=in-project&v=1
   endpoint_id: efe813053ad94d8fb7803d8f0d08e52d
   owener: jun.zhongjun
-  mail: gongzhuangbang1@huawei.com, jun.zhongjun@huawei.com
+  mail: gongzhuangbang1@huawei.com, jun.zhongjun@huawei.com, zhangjunwei38@h-partners.com
   check_label: false
 
 MagicAI:
