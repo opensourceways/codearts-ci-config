@@ -382,6 +382,13 @@ datastat-manage-website:
   git_url: https://github.com/opensourceways/datastat-manage-website.git
   pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/6c04c84fb3254256946729ac97971f4f?from=in-project&v=1
   endpoint_id: efe813053ad94d8fb7803d8f0d08e52d
-  owener: jun.zhongjun
+  owner: jun.zhongjun
   mail: gongzhuangbang1@huawei.com, jun.zhongjun@huawei.com
   check_label: false
+
+EasySoftware-autorepair:
+  git_url: https://github.com/opensourceways/EasySoftware-autorepair.git
+  pipeline_url: https://devcloud.cn-north-4.huaweicloud.com/cicd/project/3a76c1785dda4b13a399937d1978f240/pipeline/history/691ce333c561451f95639ad87ff9cd66?from=in-project&v=1
+  endpoint_id: 340a542f29ad43bbb17c7ccb31aebb30
+  owner: hourunze,zhaiwenjie
+  mail: hourunze@h-partners.com
