@@ -2,12 +2,6 @@ set +e
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
 export GCM_CREDENTIAL_STORE=cache
 CACHE_DIR=/opt/cached_resources
-WORKDIR=${CACHE_DIR}/sast
-export GOROOT=${WORKDIR}/go
-export GOPATH=${WORKDIR}/gopath
-export JAVA_HOME=$WORKDIR/jdk18
-export NODE_HOME=${CACHE_DIR}/node-v16.17.0-linux-x64
-export PATH=$NODE_HOME/bin:$GOPATH/bin:$GOROOT/bin:$JAVA_HOME/bin:$PATH
 
 git config --global diff.renameLimit 2000
 git config --global credential.helper manager
@@ -18,24 +12,9 @@ CLONE_DIR="${CACHE_DIR}/gitleaks/repos"
 mkdir -p "$CLONE_DIR"
 
 setGit (){
- echo -e "protocol=https\\nhost=${CODEPLATFORM}\\nusername=${CODE_USERNAME}\\npassword=${GITHUB_TOKEN}" | ${CACHE_DIR}/git-credential-manager store
+ echo -e "protocol=https\\nhost=${CODEPLATFORM}\\nusername=${CODE_USERNAME}\\npassword=${GIT_TOKEN}" | ${CACHE_DIR}/git-credential-manager store
 }
-
-BASE_URL="https://api.github.com/orgs/$ORG_NAME/repos"
-PER_PAGE=100
-PAGE=1
-repos=()
-
-while :; do
-  response=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" "$BASE_URL?per_page=$PER_PAGE&page=$PAGE")
-  current_repos=$(echo "$response" | ${CACHE_DIR}/jq-linux-amd64 -r '.[] | .clone_url')
-  if [[ -z "$current_repos" ]]; then
-    break
-  fi
-
-  repos+=($current_repos)
-  PAGE=$((PAGE + 1))
-done
+repos=("https://gitee.com/mindspore/mindspore-portal.git" "https://gitee.com/mindspore/website-docs.git" "https://gitee.com/mindspore/xihe-docs.git" "https://gitee.com/mindspore/xihe-website.git" "https://gitee.com/modelers/merlin-blogs.git" "https://gitee.com/modelers/merlin-docs.git" "https://gitee.com/modelers/merlin-website.git" "https://gitee.com/openeuler/cve-manager.git" "https://gitee.com/openeuler/docs.git" "https://gitee.com/openeuler/docs-accompany-reading.git" "https://gitee.com/openeuler/easy-software.git" "https://gitee.com/openeuler/easysoftware-command.git" "https://gitee.com/openeuler/openEuler-portal.git" "https://gitee.com/openeuler/opendesign-datastat.git" "https://gitee.com/openeuler/opendesign-miniprogram.git" "https://gitee.com/openeuler/quick-issue.git" "https://gitee.com/opengauss/blog.git" "https://gitee.com/opengauss/docs.git" "https://gitee.com/opengauss/website.git" "https://gitee.com/openlookeng/website-docs.git" "https://gitee.com/openlookeng/website-v2.git")
 if [[ ${#repos[@]} -eq 0 ]]; then
   exit 1
 fi
@@ -44,16 +23,16 @@ for repo_url in "${repos[@]}"; do
   ${CACHE_DIR}/git-credential-manager erase
   setGit
   repo_name=$(basename -s .git "$repo_url")
+  org_name=$(echo $repo_url | awk -F'/' '{print $(NF-1)}')
+  CODEPLATFORM=$(echo $repo_url | awk -F'/' '{print $3}')
+  repo_path="$CLONE_DIR/$CODEPLATFORM/${org_name}/$repo_name"
+  repoGitPath="${org_name}/${repo_name}"
 
-  repo_path="$CLONE_DIR/$repo_name"
-  repoGitPath="${ORG_NAME}/${repo_name}"
-
-  cd $repo_path
-  if [[ -d "$repo_path" && -n "$(ls -A "$repo_path")" ]]; then
+  if [[ -d "$repo_path" ]]; then
     git remote prune origin
-    git fetch origin --prune
+    git -C "$repo_path" pull
   else
-    git clone "https://github.com/$repoGitPath.git"  "$repo_path"
+    git clone $repo_url  "$repo_path"
   fi
 
   current_branch=$(git -C "$repo_path" rev-parse --abbrev-ref HEAD)
@@ -67,15 +46,13 @@ for repo_url in "${repos[@]}"; do
   fi
 
   cd $repo_path
-  git fetch origin
   git fetch --all
   git branch -r
   for branch in $branches_array; do
     echo "Checking out: $branch"
     git reset --hard
     git checkout "$branch"
-    git reset --hard
-    git -C "$repo_path" pull --force
+    git -C "$repo_path" pull
     current_branch=$(git -C "$repo_path" rev-parse --abbrev-ref HEAD)
     sanitizedBranch=$(echo "$current_branch" | tr '/' '@')
     remote_url=$(git -C "$repo_path" remote -v | grep '(fetch)' | awk '{print $2}')

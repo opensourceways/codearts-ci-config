@@ -63,12 +63,13 @@ ORG_NAME=${ORG_NAME}
 git config --global diff.renameLimit 2000
 git config --global credential.helper manager
 /opt/cached_resources/git-credential-manager configure
-echo -e "protocol=https\\nhost=${CODEPLATFORM}\\nusername=${CODE_USERNAME}\\npassword=${GITHUB_TOKEN}" | /opt/cached_resources/git-credential-manager store
 currenttimestamp=$(date +%s)
 CLONE_DIR="/opt/cached_resources/gitleaks/repos"
 
 mkdir -p "$CLONE_DIR"
-
+setGit (){
+    echo -e "protocol=https\\nhost=${CODEPLATFORM}\\nusername=${CODE_USERNAME}\\npassword=${GITHUB_TOKEN}" | /opt/cached_resources/git-credential-manager store
+}
 BASE_URL="https://api.github.com/orgs/$ORG_NAME/repos"
 PER_PAGE=100
 PAGE=1
@@ -91,6 +92,8 @@ if [[ ${#repos[@]} -eq 0 ]]; then
 fi
 
 for repo_url in "${repos[@]}"; do
+  /opt/cached_resources/git-credential-manager erase
+  setGit
   repo_name=$(basename -s .git "$repo_url")
 
   repo_path="$CLONE_DIR/$repo_name"
